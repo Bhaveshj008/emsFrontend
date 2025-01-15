@@ -10,14 +10,18 @@
       }
     ],
     "routes": [
-    { "src": "/login", "dest": "/index.html" },
-    { "src": "/register", "dest": "/index.html" },
-    { "src": "/employees", "dest": "/index.html" },
-    { "src": "/employees/new", "dest": "/index.html" },
-    { "src": "/employees/edit/.*", "dest": "/index.html" },
-    { "src": "/users", "dest": "/index.html" },
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+      { "src": "/login", "dest": "/index.html" },
+      { "src": "/register", "dest": "/index.html" },
+      { "src": "/employees", "dest": "/index.html" },
+      { "src": "/employees/new", "dest": "/index.html" },
+      { "src": "/employees/edit/.*", "dest": "/index.html" },
+      { "src": "/users", "dest": "/index.html" },
+      { "src": "/", "dest": "/index.html" },
+      {
+        "src": "/(.*\\.(js|css|png|jpg|svg|woff|woff2|ttf|eot))",
+        "dest": "/$1"
+      },
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
   }
   
