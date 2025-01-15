@@ -1,3 +1,6 @@
+import api from "../../utils/api";
+import Modal from "../common/Modal";
+
 const DeleteUserModal = ({ user, isOpen, onClose, onUserDeleted }) => {
     const handleDelete = async () => {
       try {
