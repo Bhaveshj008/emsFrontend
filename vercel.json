@@ -12,9 +12,9 @@
     "routes": [
     { "src": "/login", "dest": "/index.html" },
     { "src": "/register", "dest": "/index.html" },
+    { "src": "/employees", "dest": "/index.html" },
     { "src": "/employees/new", "dest": "/index.html" },
     { "src": "/employees/edit/.*", "dest": "/index.html" },
-    { "src": "/employees", "dest": "/index.html" },
     { "src": "/users", "dest": "/index.html" },
     { "src": "/", "dest": "/index.html" },
     { "src": "/(.*)", "dest": "/index.html" }
